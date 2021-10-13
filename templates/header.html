@@ -1,6 +1,6 @@
     <div class="pragmatic_header">
         <div>
-            <h1 class="pragmatic_logo">Pragmatic</h1>
+            <h1 class="pragmatic_logo">kickdoor</h1>
         </div>
         <div>
             <span>nav1</span>
@@ -10,9 +10,9 @@
             <a href="{% url 'accountapp:login' %}?next={{ request.path }}">
                 <span>login</span>
             </a>
-            <a href="{% url 'accountapp:create' %}">
+            <!--<a href="{% url 'accountapp:create' %}">
                 <span>SignUp</span>
-            </a>
+            </a>-->
             {% else %}
             <a href="{% url 'accountapp:detail' pk=user.pk %}">
                 <span>MyPage</span>
