@@ -18,8 +18,12 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
+#from articleapp.views import ArticleListView -> Article을 메인 도메인으로
+from projectapp.views import ProjectListView
 
 urlpatterns = [
+    #path('', ArticleListView.as_view(), name='home'), -> Article을 메인 도메인으로
+    path('', ProjectListView.as_view(), name='home'),
 
     path('admin/', admin.site.urls),
     path('accounts/', include('accountapp.urls')),
